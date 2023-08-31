@@ -5,6 +5,7 @@ const userSchema = new mongoose.Schema({
     email: { type: String, required: true, unique: true, match: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/ },
     password: { type: String, required: true },
     userType: { type: String },
+    rememberToken: { type: String },
 }, {
     timestamps: {
         currentTime: () => new Date().getTime() + (5 * 60 * 60 * 1000)

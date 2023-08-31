@@ -10,10 +10,16 @@ module.exports = {
     PASSWORD_REQUIRED: 'Password is required.',
     OTP_VERIFICATION_SUCCESSFUL: 'Otp verified successfully.',
     INVALID_OTP: 'Otp is invalid.',
-    USER_REGISTERED: 'User registered successfully.',
     OTP_NOT_VERIFIED: 'Otp is not verified.',
     LOGIN_SUCCESSFUL: 'Login successfully.',
     USER_NOT_FOUND: 'User not found.',
     INVALID_CREDENTIALS: 'Invalid Credentials.',
-    
+    USER_TYPE_REQUIRED: 'User type is required',
+    FILTER_REQUIRED: 'Filter is required.',
+    INVALID_FILTER: 'Filter is invalid.',
+    USERS_FOUND_SUCCESSFULLY: 'Users found successfully.',
+    USERS_NOT_FOUND: 'Users not found.',
+    UNAUTHORIZED: 'Unautorzed access.',
+    FORBIDDEN: 'Request forbidden',
+    INVALID_USER_TYPE: 'User type is invalid.',
 };

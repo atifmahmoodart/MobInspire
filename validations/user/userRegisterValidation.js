@@ -18,12 +18,12 @@ async function userRegisterValidation(req, res, next) {
         return res.status(responseCodes.BAD_REQUEST).json({ error: responseMessages.PASSWORD_REQUIRED });
     }
 
-    if (!emailRegex.test(req.body.email)) {
-        return res.status(responseCodes.BAD_REQUEST).json({ error: responseMessages.INVALID_EMAIL });
+    if (!req.body.userType) {
+        return res.status(responseCodes.BAD_REQUEST).json({ error: responseMessages.USER_TYPE_REQUIRED });
     }
 
-    if (email.length !== 0) {
-        return res.status(responseCodes.CONFLICT).json({ error: responseMessages.EMAIL_ALREADY_EXIST });
+    if (!emailRegex.test(req.body.email)) {
+        return res.status(responseCodes.BAD_REQUEST).json({ error: responseMessages.INVALID_EMAIL });
     }
 
     next();
